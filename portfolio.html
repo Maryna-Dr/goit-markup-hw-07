@@ -15,43 +15,46 @@
 <body>
     <!--Site header-->
     <header class="header">
-      <div class="header-border">
-              <!-- Site navigation -->
-      <div class="container header-nav flex">
-          <nav class="main-nav flex">
-        <a class="logo-nav list" href="./index.html" lang="en">
-            <span class="logo-accent">Web</span>Studio
+      <div class="header__container container flex">
+        <!-- Logo -->
+        <a class="header__logo logo logo--dark list" href="./index.html" lang="en">
+            <span class="logo__part logo__part--accent">Web</span>Studio
         </a>
-        <ul class="site-nav list flex">
-          <li class="item">
-            <a class="link" href="./index.html">Студія</a>
-        </li>
-          <li class="item">
-            <a class="link current" href="./portfolio.html">Портфоліо</a>
-        </li>
-          <li class="item">
-            <a class="link" href="">Контакти</a>
-        </li>
-        </ul>
-      </nav>
+
+        <!-- Header navigation -->
+        <nav class="nav flex">
+          <ul class="nav__list list flex">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
       <!-- Contacts of header -->
-      <ul class="auth-nav list flex">
-        <li class="item">
-            <a class="link" href="mailto:info@devstudio.com" lang="en">
-                <svg class="auth-icon" width="16" height="12">
-                    <use href="./images/icon/icons.svg#message"></use>
-                </svg>
-            info@devstudio.com</a>
+      <ul class="header__group list flex">
+        <li class="header__item">
+          <a class="header__link" href="mailto:info@devstudio.com" lang="en">
+            <svg class="header__icon" width="16" height="12">
+              <use href="./images/icon/icons.svg#message"></use>
+            </svg>
+            info@devstudio.com
+          </a>
         </li>
-        <li class="item">
-            <a class="link" href="tel:+380961111111">
-                <svg class="auth-icon" width="10" height="16">
-                    <use href="./images/icon/icons.svg#tel"></use>
-                </svg>
-            +38 096 111 11 11</a>
-        </li>
+        <li class="header__item">
+          <a class="header__link" href="tel:+380961111111">
+          <svg class="header__icon" width="10" height="16">
+            <use href="./images/icon/icons.svg#tel"></use>
+          </svg>
+          +38 096 111 11 11
+        </a>
+      </li>
       </ul>
-      </div>
       </div>
     </header>
 
