@@ -12,6 +12,8 @@
 
 // Header contacts group
 .header__group {
+    @extend %list;
+
     margin-left: auto;
     align-self: center;
     gap: 50px;
@@ -31,9 +33,9 @@
     text-decoration: none;
 
     transition: color var(--duration-timing);
-}
 
-.header__link:hover,
-.header__link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }

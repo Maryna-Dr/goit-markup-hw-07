@@ -1,3 +1,11 @@
+.features {
+    @extend %section;
+}
+
+.features__list {
+    @extend %list;
+}
+
 .features__item {
     --item: 4;
 }
@@ -15,6 +23,8 @@
 }
 
 .features__subtitle {
+    @extend %subtitle;
+    
     color: var(--title-text-color);
 }
 

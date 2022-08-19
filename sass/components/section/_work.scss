@@ -1,5 +1,11 @@
 .work {
+    @extend %section;
+    
     padding-top: 0;
+}
+
+.work__list {
+    @extend %list;
 }
 
 .work__item {
@@ -7,6 +13,8 @@
 }
 
 .work__subtitle {
+    @extend %subtitle;
+    
     position: absolute;
     left: 0;
     bottom: 0;

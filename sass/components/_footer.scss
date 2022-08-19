@@ -19,6 +19,8 @@
 
 // Footer contacts
 .footer__contacts {
+    @extend %list;
+
     flex-direction: column;
 }
 
@@ -37,11 +39,11 @@
 
 .footer__link-touch {
     transition: color var(--duration-timing);
-}
 
-.footer__link-touch:hover,
-.footer__link-touch:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .footer__item:not(:last-child) {

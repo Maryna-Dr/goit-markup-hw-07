@@ -1,37 +1,39 @@
-.order-form__title {
-    display: block;
-    margin-bottom: 12px;
+.order-form {
+    &__title {
+        display: block;
+        margin-bottom: 12px;
+    
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+    
+        color: var(--title-text-color);
+    }
 
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
+    &__user-data {
+        margin-bottom: 20px;
+    }
 
-    color: var(--title-text-color);
-}
+    &__wrap {
+        position: relative;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-bottom: 10px;
 
-.order-form__user-data {
-    margin-bottom: 20px;
-}
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 
-.order-form__wrap {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    margin-bottom: 10px;
-}
-
-.order-form__wrap:last-child {
-    margin-bottom: 0;
-}
-
-.order-form__label {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-
-    color: var(--primary-text-color);
+    &__label {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+    
+        color: var(--primary-text-color);
+    }
 }
 
 .order-form__field {
@@ -46,10 +48,10 @@
     outline: transparent;
 
     transition: border-color var(--duration-timing);
-}
 
-.order-form__field:focus {
-    border-color: var(--accent-color);
+    &:focus {
+        border-color: var(--accent-color);
+    }
 }
 
 .order-form__icon {
@@ -61,10 +63,10 @@
     fill: var(--title-text-color);
 
     transition: fill var(--duration-timing);
-}
 
-.order-form__field:focus+.order-form__icon {
-    fill: var(--accent-color);
+    .order-form__field:focus+& {
+        fill: var(--accent-color);
+    }
 }
 
 .order-form__comment {
@@ -83,10 +85,10 @@
     outline: transparent;
 
     transition: border-color var(--duration-timing);
-}
 
-.order-form__comment:focus {
-    border-color: var(--accent-color);
+    &:focus {
+        border-color: var(--accent-color);
+    }
 }
 
 // Agreement
@@ -99,18 +101,18 @@
 
 .order-form__uncheck {
     fill: var(--title-text-color);
-}
 
-.order-form__checkbox:checked+.order-form__check-icon>.order-form__uncheck {
-    opacity: 0;
+    .order-form__checkbox:checked+.order-form__check-icon>& {
+        opacity: 0;
+    }
 }
 
 .order-form__check {
     opacity: 0;
-}
 
-.order-form__checkbox:checked+.order-form__check-icon>.order-form__check {
-    opacity: 1;
+    .order-form__checkbox:checked+.order-form__check-icon>& {
+        opacity: 1;
+    }
 }
 
 .order-form__text {

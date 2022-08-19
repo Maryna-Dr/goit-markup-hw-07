@@ -1,4 +1,10 @@
+.client {
+    @extend %section;
+}
+
 .client__list {
+    @extend %list;
+
     display: flex;
     gap: var(--indent);
 

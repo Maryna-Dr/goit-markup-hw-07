@@ -13,8 +13,8 @@
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--duration-timing);
-}
 
-.backdrop--hidden .order-modal {
-    transform: translate(-50%, -50%) scale(1.2);
+    & .order-modal {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
 }
